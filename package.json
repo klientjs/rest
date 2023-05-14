@@ -6,7 +6,7 @@
     "rest",
     "resources"
   ],
-  "version": "0.0.0",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "./dist/cjs/index.js",
   "types": "./dist/cjs/index.d.ts",
@@ -40,10 +40,15 @@
     "prepare:commit-msg": "husky add .husky/commit-msg 'npx --no -- commitlint --edit ${1}'",
     "release": "release-it"
   },
+  "dependencies": {
+    "@klient/core": "^1.1.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "~17.6.1",
     "@commitlint/config-conventional": "~17.6.1",
     "@klient/open-stack-cli": "latest",
+    "@klient/jwt": "~1.1.0",
+    "@klient/testing": "~1.1.0",
     "@release-it/conventional-changelog": "~5.1.1",
     "@types/jest": "~27.4.1",
     "@types/node": "~17.0.43",
