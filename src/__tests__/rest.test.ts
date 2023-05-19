@@ -2,9 +2,9 @@ import Klient, { RequestEvent } from '@klient/core';
 import { mockAxiosWithRestApi } from '@klient/testing';
 
 import '@klient/jwt';
-import '../src';
+import '..';
 
-import { Resource, KlientExtended, Parameters, RegisterEvent } from '../src';
+import { Resource, KlientExtended, Parameters, RegisterEvent } from '..';
 
 import type { KlientExtended as JWTKlientExtended } from '@klient/jwt';
 import type { Post } from '@klient/testing/dist/esm/api/api';
